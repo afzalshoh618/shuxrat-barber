@@ -18,7 +18,7 @@ import {
   AlertCircle,
   HelpCircle,
 } from 'lucide-react';
-import { MASTERS, SERVICES, TIME_SLOTS, Master, Service } from '@/data/barbershop';
+import { MASTERS, SERVICES, TIME_SLOTS, Master, Service, SHOP_INFO } from '@/data/barbershop';
 
 interface BookingWizardProps {
   preselectedMasterId?: string;
@@ -234,7 +234,7 @@ export default function BookingWizard({
             </div>
 
             <span className="text-xs font-black uppercase tracking-widest text-[#F8E7BE]">
-              ROYAL CUTS BARBERSHOP
+              {SHOP_INFO.name}
             </span>
             <h3 className="text-2xl sm:text-3xl font-black text-white mt-1 mb-2">
               BRON QABUL QILINDI! ✅

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -12,6 +12,7 @@
 }
 
 @theme {
+  --font-logo: 'Bebas Neue', sans-serif;
   --font-display: 'Outfit', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
   --color-gold: #C9A15A;
@@ -33,7 +34,7 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   overflow-x: hidden;
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(201, 161, 90, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 50% 0%, rgba(201, 161, 90, 0.14) 0%, transparent 50%),
     radial-gradient(circle at 100% 50%, rgba(201, 161, 90, 0.05) 0%, transparent 40%),
     radial-gradient(circle at 0% 80%, rgba(201, 161, 90, 0.06) 0%, transparent 40%);
   background-attachment: fixed;
@@ -42,6 +43,10 @@ body {
 h1, h2, h3, h4, h5, h6, .font-display {
   font-family: 'Outfit', sans-serif;
   letter-spacing: -0.02em;
+}
+
+.font-logo {
+  font-family: 'Bebas Neue', cursive, sans-serif;
 }
 
 /* Barber Pole Stripe Animation Accent */

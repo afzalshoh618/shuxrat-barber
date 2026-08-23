@@ -128,14 +128,14 @@ export default function Contact() {
             <div className="glass-panel p-2.5 rounded-3xl border border-[#C9A15A]/30 shadow-2xl overflow-hidden">
               <div className="relative w-full h-[360px] rounded-2xl overflow-hidden bg-zinc-900">
                 <iframe
-                  title="Royal Cuts Location Map"
+                  title="9D Barbershop Location Map"
                   src="https://www.openstreetmap.org/export/embed.html?bbox=69.2600%2C41.2900%2C69.2900%2C41.3100&amp;layer=mapnik&amp;marker=41.2995%2C69.2785"
                   className="w-full h-full border-0 contrast-125 grayscale invert opacity-80"
                   loading="lazy"
                 />
                 <div className="absolute top-4 left-4 bg-[#070709]/90 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#C9A15A]/40 text-xs font-bold text-white flex items-center gap-2">
                   <MapPin className="w-3.5 h-3.5 text-[#C9A15A]" />
-                  <span>ROYAL CUTS BARBERSHOP</span>
+                  <span>{SHOP_INFO.name}</span>
                 </div>
               </div>
             </div>

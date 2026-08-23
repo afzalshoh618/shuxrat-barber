@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { saveBooking, isSlotAvailable, BookingRecord, getBookedSlots } from '@/lib/store';
+import { saveBooking, isSlotAvailable, BookingRecord } from '@/lib/store';
 import { MASTERS, SERVICES } from '@/data/barbershop';
 
 const bookingSchema = z.object({
@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
     const serviceNames = selectedServices.map((s) => s.title);
     const totalPrice = selectedServices.reduce((sum, s) => sum + s.price, 0);
 
-    const bookingId = 'RC-' + Math.floor(100000 + Math.random() * 900000);
+    const bookingId = '9D-' + Math.floor(100000 + Math.random() * 900000);
 
     const bookingRecord: BookingRecord = {
       id: bookingId,
@@ -92,12 +92,11 @@ export async function POST(request: NextRequest) {
 📞 *Tel:* [${escapeMarkdown(clientPhone)}](tel:${clientPhone.replace(/\s+/g, '')})
 💈 *Usta:* ${escapeMarkdown(master.name)}
 ✂️ *Xizmat:* ${escapeMarkdown(serviceNames.join(', '))}
-💰 *Jami summa:* ${totalPrice.toLocaleString('uz-UZ')} UZS
 📅 *Sana:* ${date}
 🕐 *Vaqt:* ${time} (40 min)
 ${notes ? `📝 *Izoh:* ${escapeMarkdown(notes)}` : ''}
 
-👑 *ROYAL CUTS BARBERSHOP*
+💈 *9D BARBERSHOP*
       `.trim();
 
       try {

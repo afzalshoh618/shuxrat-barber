@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'ROYAL CUTS — Premium Barbershop & Booking',
-  description: 'Toshkentdagi eng sara premium barbershop. Erkaklar uchun oliy darajadagi soch va soqol parvarishi, qulay onlayn navbat olish.',
-  keywords: ['barbershop', 'toshkent', 'soch olish', 'soqol parvarishi', 'royal cuts', 'online booking', 'barber'],
+  title: '9D Barbershop — Onlayn navbat',
+  description: '9D Barbershop — Zamonaviy raqamli uslub va oliy darajadagi erkaklar parvarishi. Qulay va tezkor 4-bosqichli onlayn navbat olish.',
+  keywords: ['9D Barbershop', '9D', 'barbershop', 'toshkent', 'soch olish', 'soqol parvarishi', 'online booking', 'barber navbat'],
   openGraph: {
-    title: 'ROYAL CUTS — Premium Barbershop',
-    description: 'Shahar bo\'ylab eng oliy darajadagi erkaklar uslubi. Qulay va tezkor onlayn navbat oling.',
+    title: '9D Barbershop — Onlayn navbat',
+    description: 'Zamonaviy raqamli uslub va oliy darajadagi erkaklar parvarishi maskani.',
     images: ['/images/hero.png'],
     type: 'website',
   },

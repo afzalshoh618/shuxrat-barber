@@ -31,11 +31,11 @@ export default function Masters({ onSelectMaster }: MastersProps) {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#C9A15A]/15 border border-[#C9A15A]/40 text-[#C9A15A] text-xs font-bold uppercase tracking-wider mb-4">
             <Scissors className="w-3.5 h-3.5" />
-            <span>MAHORAT EGALARI (6 TA TOP BARBER)</span>
+            <span>9D TOP USTALAR (6 TA USTA BARBER)</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-4">
-            BIZNING <span className="gold-gradient-text">TOP USTA BARBERLAR</span>
+            9D BARBERSHOP <span className="gold-gradient-text">MAHORAT EGALARI</span>
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base font-light">
             Har bir ustamiz ko&apos;p yillik tajribaga va o&apos;ziga xos mualliflik texnikasiga ega. O&apos;zingizga mos ustani tanlang va uslubingizni unga ishonib topshiring.
@@ -50,12 +50,13 @@ export default function Masters({ onSelectMaster }: MastersProps) {
               className="glass-panel rounded-3xl overflow-hidden border border-zinc-800/90 hover:border-[#C9A15A]/60 transition-all duration-300 group flex flex-col justify-between hover:-translate-y-2 shadow-2xl relative"
             >
               <div>
-                {/* Photo container */}
-                <div className="relative h-80 w-full overflow-hidden bg-zinc-900">
+                {/* 4:5 Aspect Ratio Photo Container with object-fit: cover for seamless photo replacement */}
+                <div className="relative aspect-[4/5] w-full overflow-hidden bg-zinc-900">
                   <Image
                     src={master.photoUrl}
                     alt={master.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-700 brightness-95"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#111115] via-[#111115]/30 to-transparent opacity-90" />

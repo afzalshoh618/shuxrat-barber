@@ -51,10 +51,10 @@ export const MASTERS: Master[] = [
     name: 'Alexandre',
     role: 'Bosh Usta (Top Master)',
     experienceYears: 9,
-    specialty: 'Klassik va Zamonaviy Fade, Royal Soqol',
+    specialty: 'Klassik va Zamonaviy Fade, 9D Royal Soqol',
     rating: 5.0,
     reviewsCount: 342,
-    photoUrl: '/images/master-alex.png',
+    photoUrl: '/images/masters/master-1.jpg',
     bio: 'Yevropa va Turkiya barbershop akademiya bitiruvchisi. Erkaklar uslubi va individual imidj bo\'yicha mutaxassis.',
     popularTags: ['Fade Specialist', 'Scissors Expert', 'VIP Styling']
   },
@@ -66,7 +66,7 @@ export const MASTERS: Master[] = [
     specialty: 'Ustara Bilan Formalash va Hot Towel Shave',
     rating: 4.9,
     reviewsCount: 285,
-    photoUrl: '/images/master-jasur.png',
+    photoUrl: '/images/masters/master-2.jpg',
     bio: 'Xavfsiz ustara san\'atining ustasi. Yuz tuzilishiga mos soqol shakli va issiq sochiqli spatsial parvarish ustasi.',
     popularTags: ['Razor Master', 'Beard Spa', 'Precision Trim']
   },
@@ -78,7 +78,7 @@ export const MASTERS: Master[] = [
     specialty: 'Taper Fade, Texturizing va Zamonaviy Kroy',
     rating: 4.9,
     reviewsCount: 198,
-    photoUrl: '/images/master-samir.png',
+    photoUrl: '/images/masters/master-3.jpg',
     bio: 'Yoshlar va zamonaviy uslub shaydolari uchun eng sara dizaynlar hamda sochni teksturalash bo\'yicha profil.',
     popularTags: ['Texture Fade', 'Young Style', 'Creative Cut']
   },
@@ -90,7 +90,7 @@ export const MASTERS: Master[] = [
     specialty: 'Klassik Scissors Cut & Premium Soqol Spa',
     rating: 5.0,
     reviewsCount: 310,
-    photoUrl: '/images/showroom.png',
+    photoUrl: '/images/masters/master-4.jpg',
     bio: 'Klassik erkaklar uslubi va premium soch parvarishi ustasi. Premium soqol shakllantirish bo\'yicha mutaxassis.',
     popularTags: ['Classic Master', 'VIP Grooming', 'Beard Styling']
   },
@@ -102,7 +102,7 @@ export const MASTERS: Master[] = [
     specialty: 'Crop, Buzz Cut va Soch Rangini Kamuflyaj Qilish',
     rating: 4.8,
     reviewsCount: 215,
-    photoUrl: '/images/service-haircut.png',
+    photoUrl: '/images/masters/master-5.jpg',
     bio: 'Aniq va mukammal fade liniyalari hamda oq sochlarni sezdirmay kamuflyaj qilish bo\'yicha mahorat egasi.',
     popularTags: ['Fade Expert', 'Color Camo', 'Crop Style']
   },
@@ -114,7 +114,7 @@ export const MASTERS: Master[] = [
     specialty: 'Bolalar va Yoshlar Soch Stili',
     rating: 4.9,
     reviewsCount: 176,
-    photoUrl: '/images/hero.png',
+    photoUrl: '/images/masters/master-6.jpg',
     bio: 'Zamonaviy soch stili hamda yosh jentlmenlar uchun quvnoq va shinam muhitda uslub yaratuvchi usta.',
     popularTags: ['Kids Master', 'Gentlemen Cut', 'Trendy Style']
   }
@@ -123,7 +123,7 @@ export const MASTERS: Master[] = [
 export const SERVICES: Service[] = [
   {
     id: 'royal-cut',
-    title: 'Royal Erkaklar Soch Olishi',
+    title: '9D Erkaklar Soch Olishi',
     category: 'soch',
     price: 150000,
     durationMinutes: 40,
@@ -133,7 +133,7 @@ export const SERVICES: Service[] = [
   },
   {
     id: 'beard-royal-trim',
-    title: 'Royal Soqol Modellashtirish & Spa',
+    title: '9D Soqol Modellashtirish & Spa',
     category: 'soqol',
     price: 100000,
     durationMinutes: 40,
@@ -143,11 +143,11 @@ export const SERVICES: Service[] = [
   },
   {
     id: 'vip-full-combo',
-    title: 'VIP Kompleks (Soch + Soqol + Spa)',
+    title: '9D VIP Kompleks (Soch + Soqol + Spa)',
     category: 'kompleks',
     price: 220000,
     durationMinutes: 80,
-    description: 'Royal soch olish, soqol shakllantirish hamda yuz niqobi.',
+    description: '9D soch olish, soqol shakllantirish hamda yuz niqobi.',
     imageUrl: '/images/hero.png',
     isPopular: true
   },
@@ -187,9 +187,9 @@ export const TESTIMONIALS: Testimonial[] = [
     avatar: 'SR',
     rating: 5,
     date: '2 kun oldin',
-    comment: 'Altegio orqali bron qiladigan boshqa joylarga qaraganda, bu saytning o\'ziyoq premium darajani ko\'rsatib turibdi. Ustam Alexandre vaqtida qabul qildi va soch stilini a\'lo darajada bajardi!',
+    comment: '9D Barbershop web sayti orqali bron qilish juda qulay. Alexandre usta belgilangan 40 minutlik vaqtida aniq qabul qildi. Uslub va muomala super!',
     masterName: 'Alexandre',
-    serviceTitle: 'VIP Kompleks'
+    serviceTitle: '9D VIP Kompleks'
   },
   {
     id: 'rev-2',
@@ -197,25 +197,25 @@ export const TESTIMONIALS: Testimonial[] = [
     avatar: 'BU',
     rating: 5,
     date: '1 hafta oldin',
-    comment: 'Jasur ustaning hot towel shave xizmati shunchaki ajoyib. Atrof muhit, qahva va muomala 5 yulduzli oteldagidek.',
+    comment: 'Jasur ustaning hot towel shave xizmati va 9D Barbershop muhiti juda yuqori darajada. Rahmat!',
     masterName: 'Jasur',
-    serviceTitle: 'Royal Soqol Modellashtirish'
+    serviceTitle: '9D Soqol Modellashtirish'
   }
 ];
 
 export const SHOP_INFO = {
-  name: 'ROYAL CUTS BARBERSHOP',
-  tagline: 'Shahar bo\'ylab eng oliy darajadagi erkaklar uslubi va parvarishi',
+  name: '9D BARBERSHOP',
+  tagline: 'Zamonaviy raqamli uslub va oliy darajadagi erkaklar parvarishi',
   
   phone: '+998 90 123 45 67',
   phoneFormatted: '+998901234567',
   address: 'Toshkent sh., Mirabad tumani, Oybek ko\'chasi 24-uy',
   workingHours: 'Dushanba - Yakshanba: 09:00 - 21:00 (Dam olish kunlarisiz)',
 
-  instagram: 'https://instagram.com/royalcuts.uz',
-  telegram: 'https://t.me/royalcuts_admin',
-  tiktok: 'https://tiktok.com/@royalcuts.uz',
-  youtube: 'https://youtube.com/@royalcuts',
+  instagram: 'https://instagram.com/9dbarbershop.uz',
+  telegram: 'https://t.me/9dbarbershop_admin',
+  tiktok: 'https://tiktok.com/@9dbarbershop.uz',
+  youtube: 'https://youtube.com/@9dbarbershop',
 };
 
 export const TIME_SLOTS = [

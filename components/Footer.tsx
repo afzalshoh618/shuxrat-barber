@@ -1,6 +1,6 @@
 'use client';
 
-import { Scissors, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { SHOP_INFO } from '@/data/barbershop';
 
 export default function Footer() {
@@ -14,12 +14,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-zinc-900">
           {/* Logo & Tagline */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="flex items-center gap-2.5 mb-2">
-              <div className="w-8 h-8 rounded-full bg-[#C9A15A] text-black flex items-center justify-center">
-                <Scissors className="w-4 h-4" />
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-9 h-9 rounded-xl bg-[#C9A15A] text-black flex items-center justify-center font-logo text-xl font-black">
+                9D
               </div>
-              <span className="font-display font-extrabold text-lg tracking-wider text-white">
-                ROYAL <span className="text-[#C9A15A]">CUTS</span>
+              <span className="font-logo font-black text-2xl tracking-wide text-white">
+                9D <span className="text-[#C9A15A]">BARBERSHOP</span>
               </span>
             </div>
             <p className="text-zinc-500 max-w-sm text-xs font-light">
@@ -32,7 +32,7 @@ export default function Footer() {
             <a href="#about" className="hover:text-[#C9A15A] transition-colors">Biz haqimizda</a>
             <a href="#masters" className="hover:text-[#C9A15A] transition-colors">Ustalar</a>
             <a href="#services" className="hover:text-[#C9A15A] transition-colors">Xizmatlar</a>
-            <a href="#booking" className="hover:text-[#C9A15A] transition-colors font-bold text-[#F3E0AC]">Navbat Olish</a>
+            <a href="#booking" className="hover:text-[#C9A15A] transition-colors font-bold text-[#F8E7BE]">Navbat Olish</a>
           </div>
 
           {/* Scroll To Top Button */}
@@ -48,7 +48,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-zinc-600 gap-4">
           <p>© 2026 {SHOP_INFO.name}. Barcha huquqlar himoyalangan.</p>
-          <p className="text-[11px]">Bespoke Luxury Barbershop & Booking Experience</p>
+          <p className="text-[11px]">Bespoke 9D Digital Barbershop & Booking Experience</p>
         </div>
       </div>
     </footer>
